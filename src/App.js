@@ -12,6 +12,9 @@ function App() {
         <h1>Hola soy otro div</h1>
         <p>Saludando desde mi componente</p>
       </div>
+      <div>
+        <img src="https://ux.ed.team/img/curso-portada.png" alt="prueba" />
+      </div>
     </Fragment>
   );
 }
