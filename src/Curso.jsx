@@ -1,5 +1,6 @@
 import React from 'react'
 
+const { nombres, apellidos, edad } = { nombres: 'Juan Jose', apellidos: 'Gonzalez Ramirez', edad: 28}
 
 const Curso = () => (
     <article className="card">
@@ -8,18 +9,8 @@ const Curso = () => (
         </div>
         <div className="card__data s-border s-radius-br s-radius-bl s-pxy-2">
           <h3 className="t5 s-mb-2 s-center">
-            Soy una tarjetita
+            { `${nombres} ${apellidos}` } y { edad > 18 ? 'soy mayor de edad' : 'No soy mayor de edad' }
           </h3>
-          <div className="s-mb-2 s-main-center">
-            <div className="card__teacher s-cross-center">
-              <div className="card__avatar s-mr-1">
-                <div className="circle img-container">
-                  <img src="https://ux.ed.team/img/profesor.jpg" alt="imagen" />
-                </div>
-              </div>
-              <span className="small">Juancito</span>
-            </div>
-          </div>
           <div className="s-main-center">
             <a className="button--ghost-alert button--tiny" href="/comprar">$ 20USD</a>
           </div>
