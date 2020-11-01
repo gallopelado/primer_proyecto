@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+import {Fragment} from 'react';
 import "./styles/styles.scss"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <div>
+        <h1>Hola mundo desde App.js</h1>
+        <p>Saludando desde mi componente</p>
+      </div>
+      <div>
+        <h1>Hola soy otro div</h1>
+        <p>Saludando desde mi componente</p>
+      </div>
+    </Fragment>
   );
 }
 
