@@ -18,7 +18,12 @@ function App() {
     </div>
 
     <div className="ed-grid m-grid-3">
-      <Curso />
+      <Curso title="React desde cero" image="https://ux.ed.team/img/curso-portada.png" price="20 usd" 
+        profesor="Tio Gallo"
+      />
+      <Curso title="MarkDown gratis" image="https://edteam-media.s3.amazonaws.com/courses/medium/2c2c7a26-3dc2-4d61-a165-7b9de73420ce.png" 
+        price="gratis" profesor="Tio Gallo Tambien"
+      />
     </div>
 
     </>
