@@ -4,25 +4,29 @@ import Curso from './Curso'
 //Trabajando con arrays
 const cursos = [
   {
-    title: "Node desde cero"
+    id: 1
+    , title: "Node desde cero"
     , image: "https://i.blogs.es/35cf6e/brauiii/450_1000.jpg"
-    , price: null
-    , profesor: null
+    , price: ""
+    , profesor: ""
   }, {
-    title: "React desde cero"
+    id: 2
+    , title: "React desde cero"
     , image: "https://i.blogs.es/35cf6e/brauiii/450_1000.jpg"
-    , price: null
-    , profesor: null
+    , price: ""
+    , profesor: ""
   }, {
-    title: "Js desde cero"
+    id: 3
+    , title: "Js desde cero"
     , image: "https://i.blogs.es/35cf6e/brauiii/450_1000.jpg"
-    , price: null
-    , profesor: null
+    , price: ""
+    , profesor: ""
   }, {
-    title: "CSS desde cero"
+    id: 4
+    , title: "CSS desde cero"
     , image: "https://i.blogs.es/35cf6e/brauiii/450_1000.jpg"
-    , price: null
-    , profesor: null
+    , price: ""
+    , profesor: ""
   }
 ]
 
@@ -52,7 +56,7 @@ function App() {
       {/* Componente sin props */}
       {/* <Curso /> */}
       {/* Trabajando con arrays */}
-      { cursos.map( ({ title, image, price, profesor }) => <Curso  title={title} image={image} price={price} profesor={profesor} /> ) }
+      { cursos.map( ({ id, title, image, price, profesor }) => <Curso  key={id} id={id} title={title} image={image} price={price} profesor={profesor} /> ) }
     </div>
 
     </>
