@@ -24,6 +24,8 @@ function App() {
       <Curso title="MarkDown gratis" image="https://edteam-media.s3.amazonaws.com/courses/medium/2c2c7a26-3dc2-4d61-a165-7b9de73420ce.png" 
         price="gratis" profesor="Tio Gallo Tambien"
       />
+      {/* Componente sin props */}
+      <Curso />
     </div>
 
     </>

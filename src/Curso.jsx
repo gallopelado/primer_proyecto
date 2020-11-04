@@ -1,6 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 //const { nombres, apellidos, edad } = { nombres: 'Juan Jose', apellidos: 'Gonzalez Ramirez', edad: 28}
+// En esta lección se agregó  el paquete prop-types
 
 const Curso = ({image, price, title, profesor}) => (
     <article className="card">
@@ -21,5 +23,19 @@ const Curso = ({image, price, title, profesor}) => (
         </div>
     </article>
 )
+
+Curso.propTypes = {
+  title: PropTypes.string,
+  image: PropTypes.string,
+  price: PropTypes.string,
+  profesor: PropTypes.string
+}
+
+Curso.defaultProps = {
+  title: "No se encontro titulo"
+  , image: "https://i.blogs.es/35cf6e/brauiii/450_1000.jpg"
+  , price: "--"
+  , profesor: "Sin profesor"
+}
 
 export default Curso;
