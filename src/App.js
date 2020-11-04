@@ -1,6 +1,31 @@
 import "./styles/styles.scss"
 import Curso from './Curso'
 
+//Trabajando con arrays
+const cursos = [
+  {
+    title: "Node desde cero"
+    , image: "https://i.blogs.es/35cf6e/brauiii/450_1000.jpg"
+    , price: null
+    , profesor: null
+  }, {
+    title: "React desde cero"
+    , image: "https://i.blogs.es/35cf6e/brauiii/450_1000.jpg"
+    , price: null
+    , profesor: null
+  }, {
+    title: "Js desde cero"
+    , image: "https://i.blogs.es/35cf6e/brauiii/450_1000.jpg"
+    , price: null
+    , profesor: null
+  }, {
+    title: "CSS desde cero"
+    , image: "https://i.blogs.es/35cf6e/brauiii/450_1000.jpg"
+    , price: null
+    , profesor: null
+  }
+]
+
 function App() {
   return (
     <>
@@ -18,14 +43,16 @@ function App() {
     </div>
 
     <div className="ed-grid m-grid-3">
-      <Curso title="React desde cero" image="https://ux.ed.team/img/curso-portada.png" price="20 usd" 
+      {/* <Curso title="React desde cero" image="https://ux.ed.team/img/curso-portada.png" price="20 usd" 
         profesor="Tio Gallo"
       />
       <Curso title="MarkDown gratis" image="https://edteam-media.s3.amazonaws.com/courses/medium/2c2c7a26-3dc2-4d61-a165-7b9de73420ce.png" 
         price="gratis" profesor="Tio Gallo Tambien"
-      />
+      /> */}
       {/* Componente sin props */}
-      <Curso />
+      {/* <Curso /> */}
+      {/* Trabajando con arrays */}
+      { cursos.map( ({ title, image, price, profesor }) => <Curso  title={title} image={image} price={price} profesor={profesor} /> ) }
     </div>
 
     </>
