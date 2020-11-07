@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {Link} from 'react-router-dom'
 
 //const { nombres, apellidos, edad } = { nombres: 'Juan Jose', apellidos: 'Gonzalez Ramirez', edad: 28}
 // En esta lección se agregó  el paquete prop-types
@@ -7,7 +8,9 @@ import PropTypes from 'prop-types'
 const Curso = ({id, image, price, title, profesor}) => (
     <article className="card" id={id}>
         <div className="img-container s-ratio-16-9 s-radius-tr s-radius-tl">
-          <img src={image} alt="imagen" />
+          <Link to={`/cursos/${id}`}>
+            <img src={image} alt="imagen" />
+          </Link>
         </div>
         <div className="card__data s-border s-radius-br s-radius-bl s-pxy-2">
           <h3 className="t5 s-mb-2 s-center">
