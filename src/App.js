@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Banner />
-      <Formulario />
+      <Formulario name="El Formulario Salvaje" />
     </>
   );
 }
