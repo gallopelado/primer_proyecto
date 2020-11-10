@@ -1,5 +1,5 @@
 import React from 'react'
-import CourseCard from './CourseCard'
+import CourseCard from '../Molecules/CourseCard'
 
 const CourseGrid = () => (
     <div className="ed-grid m-grid-4">
