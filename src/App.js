@@ -5,6 +5,7 @@ import CourseGrid from "./CourseGrid"
 import Course from "./Course"
 import MainMenu from "./MainMenu"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import Historial from "./Historial"
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Route path="/" exact  component={ Banner } />
         <Route path="/cursos/:id" component={ Course } />
         <Route path="/cursos"  component={ CourseGrid } />
+        <Route path="/historial/:id"  component={ Historial } />
+        <Route path="/historial"  component={ Historial } />
         <Route path="/formulario" component={ () => <Formulario name="Inscripcion contacto" /> } />
         <Route component={ () => (
           <div className="ed-grid">
