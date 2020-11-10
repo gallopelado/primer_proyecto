@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 //const { nombres, apellidos, edad } = { nombres: 'Juan Jose', apellidos: 'Gonzalez Ramirez', edad: 28}
 // En esta lección se agregó  el paquete prop-types
 
-const Curso = ({id, image, price, title, profesor}) => (
+const CourseCard = ({id, image, price, title, professor}) => (
     <article className="card" id={id}>
         <div className="img-container s-ratio-16-9 s-radius-tr s-radius-tl">
           <Link to={`/cursos/${id}`}>
@@ -15,7 +15,7 @@ const Curso = ({id, image, price, title, profesor}) => (
         <div className="card__data s-border s-radius-br s-radius-bl s-pxy-2">
           <h3 className="t5 s-mb-2 s-center">
             {/* { `${nombres} ${apellidos}` } y { edad > 18 ? 'soy mayor de edad' : 'No soy mayor de edad' } */}
-            Profesor: { profesor }
+            Profesor: { professor }
           </h3>
           <h3 className="t5 s-mb-2 s-center">
             { title }
@@ -27,20 +27,20 @@ const Curso = ({id, image, price, title, profesor}) => (
     </article>
 )
 
-Curso.propTypes = {
+CourseCard.propTypes = {
   id: PropTypes.number,
   title: PropTypes.string,
   image: PropTypes.string,
   price: PropTypes.string,
-  profesor: PropTypes.string
+  professor: PropTypes.string
 }
 
-Curso.defaultProps = {
+CourseCard.defaultProps = {
   id: ""
   , title: "No se encontro titulo"
   , image: "https://i.blogs.es/35cf6e/brauiii/450_1000.jpg"
   , price: "--"
-  , profesor: "Sin profesor"
+  , professor: "Sin profesor"
 }
 
-export default Curso;
+export default CourseCard;
