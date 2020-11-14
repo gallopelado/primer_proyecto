@@ -1,6 +1,6 @@
 import "../styles/styles.scss"
 import Form from "./Pages/Form"
-import CourseGrid from "./Organisms/CourseGrid"
+import Courses from "./Pages/Courses"
 import Course from "./Pages/Course"
 import MainMenu from "./Organisms/MainMenu"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
@@ -15,7 +15,7 @@ function App() {
       <Switch>
         <Route path="/" exact  component={ Home } />
         <Route path="/cursos/:id" component={ Course } />
-        <Route path="/cursos"  component={ CourseGrid } />
+        <Route path="/cursos"  component={ Courses } />
         <Route path="/historial/:id"  component={ History } />
         <Route path="/historial"  component={ History } />
         <Route path="/usuarios"  component={ Users } />
