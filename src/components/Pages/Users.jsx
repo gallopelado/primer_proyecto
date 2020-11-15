@@ -1,6 +1,5 @@
 import Axios from 'axios'
 import React, {Component} from 'react'
-import UserCard from '../Molecules/UserCard'
 import UsersGrid from '../Organisms/UsersGrid'
 
 class Users extends Component {
