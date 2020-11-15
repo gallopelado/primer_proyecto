@@ -1,25 +1,28 @@
-import React, {useState, useEffect} from 'react'
-import Axios from 'axios'
-
+import React, {useState} from 'react'
+//import React, {useState, useEffect} from 'react'
+//import Axios from 'axios'
+import useCourse from '../CustomHooks/useCourse'
 
 const Course = ({match}) => {
 
     const id = match.params.id
     //Usando el estado
-    const [courses, setCourses] = useState({})
+    //const [courses, setCourses] = useState({})
     const [comment, setComment] = useState(null)
     
     //Usando ciclo de vida
-    useEffect(() => {
+   /*  useEffect(() => {
         Axios.get(`https://my-json-server.typicode.com/gallopelado/fake_rest_ejemplo/cursos/${id}`)
         .then(({data}) => setCourses(data))
-    }, [id])
+    }, [id]) */
     
     const toSetComment = (e) => {
         setComment(e.target.value)
     }
 
-    const { title, image } = courses
+    //const { title, image } = courses
+    //Custom Hook
+    const { title, image } = useCourse(id)
     
     return (
         <div className="ed-grid m-grid-3">
